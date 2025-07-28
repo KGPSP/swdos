@@ -2,7 +2,7 @@
 cursorTheme=Win10OS-cursors
 
 [kdeglobals][General]
-ColorScheme=Win11OSDark
+ColorScheme=SWD_PSP_OSDark
 
 [kdeglobals][Icons]
 Theme=Win11
@@ -20,7 +20,13 @@ LayoutName=org.kde.breeze.desktop
 ButtonsOnLeft=XAI
 ButtonsOnRight=
 library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Win11OS-dark
+theme=__aurorae__svg__SWD_PSP_OS-dark
 
 [plasmarc][Theme]
-name=Win11OS-dark
+name=SWD_PSP_OS-dark
+
+[Wallpaper]
+defaultWallpaperTheme=SWD_PSP_OS-dark
+defaultFileSuffix=.jpg
+defaultWidth=3840
+defaultHeight=2400
