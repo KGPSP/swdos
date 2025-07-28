@@ -1,159 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   id="svg4379"
-   width="200"
-   height="200"
-   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
-   sodipodi:docname="kde.svg"
-   version="1.1"
-   viewBox="0 0 200 200"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <metadata
-     id="metadata10">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs8">
-    <style
-       id="current-color-scheme"
-       type="text/css">
-      .ColorScheme-Text {
-        color:#31363b;
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.36 78.36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f6f6f6;
       }
-      </style>
-    <style
-       type="text/css"
-       id="style832" />
-    <linearGradient
-       id="linearGradient8660"
-       x1="-7.6728001"
-       x2="-5.027"
-       y1="-29.104"
-       y2="-27.252001"
-       gradientTransform="matrix(19.102507,0,0,19.102507,-8.3673106,603.14466)"
-       gradientUnits="userSpaceOnUse">
-      <stop
-         stop-color="#00bffb"
-         offset="0"
-         id="stop17" />
-      <stop
-         stop-color="#01a0f3"
-         offset="1"
-         id="stop19" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient8668"
-       x1="-4.7624002"
-       x2="-1.852"
-       y1="-27.252001"
-       y2="-30.122999"
-       gradientTransform="matrix(20.03297,0,0,19.102507,-3.9472134,603.14466)"
-       gradientUnits="userSpaceOnUse">
-      <stop
-         stop-color="#11c2f4"
-         offset="0"
-         id="stop12" />
-      <stop
-         stop-color="#2dc5f4"
-         offset="1"
-         id="stop14" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient8676"
-       x1="-7.6728001"
-       x2="-5.027"
-       y1="-26.722"
-       y2="-24.493"
-       gradientTransform="matrix(19.102507,0,0,19.102507,-8.3673106,603.14466)"
-       gradientUnits="userSpaceOnUse">
-      <stop
-         stop-color="#0954a8"
-         offset="0"
-         id="stop7" />
-      <stop
-         stop-color="#0954a8"
-         offset="1"
-         id="stop9" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient8684"
-       x1="-4.4977999"
-       x2="-1.852"
-       y1="-26.722"
-       y2="-24.111"
-       gradientTransform="matrix(20.03297,0,0,19.102507,-3.9472134,603.14466)"
-       gradientUnits="userSpaceOnUse">
-      <stop
-         stop-color="#339ed9"
-         offset="0"
-         id="stop2" />
-      <stop
-         stop-color="#2386c9"
-         offset="1"
-         id="stop4" />
-    </linearGradient>
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
   </defs>
-  <sodipodi:namedview
-     id="namedview39"
-     bordercolor="#666666"
-     borderopacity="1"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:current-layer="svg4379"
-     inkscape:cx="108.49974"
-     inkscape:cy="121.06659"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-height="997"
-     inkscape:window-maximized="1"
-     inkscape:window-width="1920"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:zoom="2.8248916"
-     objecttolerance="10"
-     pagecolor="#dfe2e4"
-     showgrid="true"
-     inkscape:snap-bbox="true"
-     inkscape:bbox-nodes="true"
-     inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:document-rotation="0"
-     inkscape:pagecheckerboard="0">
-    <inkscape:grid
-       id="grid839"
-       type="xygrid" />
-  </sodipodi:namedview>
-  <g
-     id="g1873"
-     transform="matrix(12.598517,0,0,12.598517,-51.666657,-76.624994)"
-     style="fill:#ffffff;fill-opacity:1">
-    <path
-       id="path1865"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.286629;stroke-linejoin:round"
-       d="m 12.170744,6.4789367 v 0.5291628 2.3812326 0.5291628 h 0.529163 2.381232 0.529163 V 9.3893321 7.0080995 c 0,-0.2931562 -0.236007,-0.5291628 -0.529163,-0.5291628 h -2.381232 z" />
-    <path
-       id="path1867"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.286629;stroke-linejoin:round"
-       d="m 8.9957671,6.4789367 c -0.2931562,0 -0.5291628,0.2360066 -0.5291628,0.5291628 v 2.3801991 0.00103 0.5281293 h 0.5074589 c 0.00725,2.921e-4 0.014375,0.00103 0.021704,0.00103 H 11.377 11.906163 V 9.3893321 7.0080995 6.4789367 H 11.377 Z" />
-    <path
-       id="path1869"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.286629;stroke-linejoin:round"
-       d="m 12.170744,10.183076 v 0.529163 2.381233 0.529163 h 0.529163 2.381232 c 0.293156,0 0.529163,-0.236007 0.529163,-0.529163 v -2.381233 -0.529163 h -0.529163 -2.381232 z" />
-    <path
-       id="path1871"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.286629;stroke-linejoin:round"
-       d="m 8.4666043,10.183076 v 0.529163 2.381233 c 0,0.293156 0.2360066,0.529163 0.5291628,0.529163 H 11.377 11.906163 V 13.093472 10.712239 10.183076 H 11.377 8.9957671 Z" />
+  <g id="Warstwa_2-2" data-name="Warstwa 2">
+    <g>
+      <path class="cls-1" d="M60.32,8.55H18.04c-5.23,0-9.48,4.25-9.48,9.48v42.29c0,5.23,4.25,9.48,9.48,9.48h42.29c5.23,0,9.48-4.25,9.48-9.48V18.04c0-5.23-4.25-9.48-9.48-9.48ZM42.68,19.04h3.21v3.21h-3.21v-3.21ZM36.93,21.65h3.21v3.21h-3.21v-3.21ZM35.97,30.13h5.25v-5.19h6.42v6.42h-5.25v5.19h-6.42v-6.42ZM18.01,42.49v-17.65h17.48v4.45h-13.25v12.61c0,5.06,4.7,7.05,10.59,10.45,5.89-3.4,10.59-5.39,10.59-10.45v-5.35h4.23v5.94c0,7.08-6.57,9.87-14.82,14.63-8.24-4.76-14.82-7.55-14.82-14.63ZM59.54,59.32h-16.57c-.89-.16-.86-1.96-.11-2.18l16.81-.03c.92.17.92,2.16-.13,2.2Z"/>
+      <path class="cls-2" d="M66.23,0H12.13C5.44,0,0,5.44,0,12.13v54.1c0,6.69,5.44,12.13,12.13,12.13h54.1c6.69,0,12.13-5.44,12.13-12.13V12.13c0-6.69-5.44-12.13-12.13-12.13ZM73.57,62.92c0,5.87-4.78,10.65-10.65,10.65H15.44c-5.87,0-10.65-4.78-10.65-10.65V15.44c0-5.87,4.78-10.65,10.65-10.65h47.48c5.87,0,10.65,4.78,10.65,10.65v47.48Z"/>
+    </g>
   </g>
 </svg>
