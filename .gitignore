@@ -1,0 +1,23 @@
+# Development files
+.claude/
+CLAUDE.md
+
+# System files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporary files
+*.tmp
+*.temp
