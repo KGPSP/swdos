@@ -98,6 +98,10 @@ check_file "$INSTALL_DIR/wallpapers/SWD_PSP_OS-light/contents/images/3840x2400.j
 check_file "$INSTALL_DIR/plasma/look-and-feel/com.github.KGPSP.SWD_PSP_OS-dark/contents/splash/images/background.jpg" "Splash background (dark)" || ((ERRORS++))
 check_file "$INSTALL_DIR/plasma/look-and-feel/com.github.KGPSP.SWD_PSP_OS-light/contents/splash/images/background.jpg" "Splash background (light)" || ((ERRORS++))
 
+# Desktop layout configurations
+check_file "$INSTALL_DIR/plasma/look-and-feel/com.github.KGPSP.SWD_PSP_OS-dark/contents/layouts/org.kde.plasma.desktop-layout.js" "Desktop layout (dark)" || ((ERRORS++))
+check_file "$INSTALL_DIR/plasma/look-and-feel/com.github.KGPSP.SWD_PSP_OS-light/contents/layouts/org.kde.plasma.desktop-layout.js" "Desktop layout (light)" || ((ERRORS++))
+
 echo
 echo "3. SDDM LOGIN THEMES:"
 echo "===================="

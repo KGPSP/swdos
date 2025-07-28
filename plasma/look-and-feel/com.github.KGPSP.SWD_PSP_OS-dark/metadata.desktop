@@ -17,4 +17,5 @@ X-KDE-PluginInfo-Version=
 X-KDE-PluginInfo-Website=https://github.com/KGPSP/swdos
 X-KDE-fallbackPackage=org.kde.breeze.desktop
 X-Plasma-MainScript=defaults
+X-KDE-PluginInfo-EnabledByDefault=true
 X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1554625,kns://plasma-themes.knsrc/api.kde-look.org/1554634,kns://aurorae.knsrc/api.kde-look.org/1554624,kns://icons.knsrc/api.kde-look.org/1546069,kns://wallpaper.knsrc/api.kde-look.org/1554620,kns://sddmtheme.knsrc/api.kde-look.org/1554630,kns://xcursor.knsrc/api.kde-look.org/1383064

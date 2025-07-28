@@ -98,6 +98,8 @@ Sprawdzi czy wszystkie komponenty są poprawnie zainstalowane.
 - ✅ **Ekran logowania** - czerwone tło z logo PSP
 - ✅ **Okna** - dekoracje w stylu Windows 11
 - ✅ **Aplikacje** - spójny wygląd dzięki Kvantum
+- ✅ **Panel zadań** - dolny panel w stylu Windows 11
+- ✅ **Układ pulpitu** - automatycznie zastosowany z widżetami
 
 ### 6. Rozwiązywanie problemów:
 

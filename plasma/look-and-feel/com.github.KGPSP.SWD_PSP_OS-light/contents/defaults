@@ -30,3 +30,14 @@ defaultWallpaperTheme=SWD_PSP_OS-light
 defaultFileSuffix=.jpg
 defaultWidth=3840
 defaultHeight=2400
+
+[plasmashellrc][PlasmaViews][Panel 1]
+thickness=40
+alignment=132
+panelOpacity=2
+
+[plasmashellrc][PlasmaViews][Panel 1][Defaults]
+thickness=40
+
+[org.kde.plasma.desktop][General]
+showToolbox=false
