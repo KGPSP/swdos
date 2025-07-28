@@ -2,6 +2,23 @@
 
 SWD_PSP_OS KDE is a professional theme for KDE Plasma desktop, prepared for Debian 12.x distributions for PSP (Państwowa Straż Pożarna - State Fire Service).
 
+### Quick Start
+
+```bash
+# Clone and enter directory
+git clone https://github.com/KGPSP/swdos.git
+cd swdos
+
+# Make scripts executable
+chmod +x *.sh
+
+# Install theme
+./install.sh
+
+# Apply theme
+./apply-theme.sh
+```
+
 ### About
 
 This theme provides a modern and clean interface designed specifically for use in PSP (Polish State Fire Service) workstations running Debian 12.x with KDE Plasma desktop environment.
@@ -21,31 +38,74 @@ In this repository you'll find:
 
 ### System Requirements
 
-- Debian 12.x (Bookworm)
+- Debian 12.x (Bookworm) or compatible distribution
 - KDE Plasma 5.x or 6.x
-- Kvantum theme engine (for application styling)
+- Git (for cloning repository)
+- Kvantum theme engine (optional, for application styling)
+
+To install Kvantum:
+```bash
+sudo apt install qt5-style-kvantum qt5-style-kvantum-themes
+```
 
 ## Installation
 
-### Step 1: Install Theme Files
+### Complete Installation Guide
 
+#### Step 1: Clone the Repository
+
+```sh
+git clone https://github.com/KGPSP/swdos.git
+cd swdos
+```
+
+#### Step 2: Make Scripts Executable
+
+```sh
+chmod +x *.sh
+# Or use the helper script:
+./make-executable.sh
+```
+
+#### Step 3: Install Theme Files
+
+For user installation (recommended):
 ```sh
 ./install.sh
 ```
 
-For system-wide installation (recommended for workstations):
+For system-wide installation:
 ```sh
 sudo ./install.sh
 ```
 
-### Step 2: Apply the Theme
+The installer will show progress for each component:
+- Aurorae themes (window decorations)
+- Color schemes
+- Kvantum themes
+- Plasma desktop themes
+- Look and Feel packages
+- Wallpapers
 
-After installation, the theme needs to be applied. Use the included script:
+#### Step 4: Apply the Theme
 
+After installation, apply the theme using ONE of these methods:
+
+**Method A: Using the apply script (recommended)**
 ```sh
 ./apply-theme.sh        # For dark theme (default)
 ./apply-theme.sh --light # For light theme
 ```
+
+**Method B: Manual application**
+1. Go to **System Settings → Appearance → Global Theme**
+2. Select **SWD_PSP_OS-dark** or **SWD_PSP_OS-light**
+3. Click **Apply**
+4. Make sure BOTH checkboxes are selected:
+   - ✓ Appearance Settings (colors, icons, plasma theme)
+   - ✓ Desktop and Window Layout (panel configuration, widgets, kickoff)
+
+#### Step 5: Apply Wallpaper (if needed)
 
 If the wallpaper doesn't apply automatically:
 ```sh
@@ -53,13 +113,12 @@ If the wallpaper doesn't apply automatically:
 ./apply-wallpaper.sh --light # For light wallpaper
 ```
 
-Or apply manually:
-1. Go to **System Settings → Appearance → Global Theme**
-2. Select **SWD_PSP_OS-dark** or **SWD_PSP_OS-light**
-3. Click **Apply**
-4. Check all components you want to apply:
-   - ✓ Appearance Settings (colors, icons, plasma theme)
-   - ✓ Desktop and Window Layout (panel configuration, widgets, kickoff)
+#### Step 6: Verify Installation
+
+To check if everything is installed correctly:
+```sh
+./verify-installation.sh
+```
 
 ### SDDM Theme Installation
 
@@ -76,6 +135,29 @@ For Plasma 6:
 sudo ./sddm-dark/6.0/install.sh  # Dark variant
 sudo ./sddm-light/6.0/install.sh # Light variant
 ```
+
+## Troubleshooting
+
+### Common Issues
+
+#### Wallpaper not applying
+1. Run `./apply-wallpaper.sh`
+2. Check wallpaper path: `./verify-installation.sh`
+3. Manually set wallpaper: Right-click desktop → Configure Desktop and Wallpaper → Select PSP wallpaper
+
+#### Theme partially applied
+1. Ensure both checkboxes are selected when applying theme
+2. Log out and log back in
+3. Run `./apply-theme.sh` again
+
+#### Icons missing or incorrect
+1. Check if Win11 icon theme is installed
+2. Go to System Settings → Appearance → Icons → Select Win11
+
+#### Panel not styled correctly
+1. Right-click on panel → Enter Edit Mode
+2. Adjust panel height and alignment
+3. Exit Edit Mode
 
 ## Uninstall
 
