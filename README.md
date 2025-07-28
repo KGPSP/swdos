@@ -47,6 +47,12 @@ After installation, the theme needs to be applied. Use the included script:
 ./apply-theme.sh --light # For light theme
 ```
 
+If the wallpaper doesn't apply automatically:
+```sh
+./apply-wallpaper.sh        # For dark wallpaper
+./apply-wallpaper.sh --light # For light wallpaper
+```
+
 Or apply manually:
 1. Go to **System Settings → Appearance → Global Theme**
 2. Select **SWD_PSP_OS-dark** or **SWD_PSP_OS-light**

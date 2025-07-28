@@ -41,3 +41,7 @@ thickness=40
 
 [org.kde.plasma.desktop][General]
 showToolbox=false
+
+[Desktop][Wallpaper][org.kde.image][General]
+Image=/usr/share/wallpapers/SWD_PSP_OS-light/contents/images/3840x2400.jpg
+FillMode=2
