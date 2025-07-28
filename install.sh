@@ -34,18 +34,48 @@ THEME_NAME=SWD_PSP_OS
 install() {
   local name=${1}
 
-  cp -r ${SRC_DIR}/aurorae/*                                                         ${AURORAE_DIR}
-  cp -r ${SRC_DIR}/color-schemes/*.colors                                            ${SCHEMES_DIR}
-  cp -r ${SRC_DIR}/Kvantum/*                                                         ${KVANTUM_DIR}
-  cp -r ${SRC_DIR}/plasma/desktoptheme/*                                             ${PLASMA_DIR}
-  cp -r ${SRC_DIR}/plasma/look-and-feel/*                                            ${LOOKFEEL_DIR}
-  cp -r ${SRC_DIR}/wallpaper/*                                                       ${WALLPAPER_DIR}
+  echo "Installing components..."
+  echo -n "  - Aurorae themes... "
+  cp -r ${SRC_DIR}/aurorae/* ${AURORAE_DIR} && echo "OK" || echo "FAILED"
+  
+  echo -n "  - Color schemes... "
+  cp -r ${SRC_DIR}/color-schemes/*.colors ${SCHEMES_DIR} && echo "OK" || echo "FAILED"
+  
+  echo -n "  - Kvantum themes... "
+  cp -r ${SRC_DIR}/Kvantum/* ${KVANTUM_DIR} && echo "OK" || echo "FAILED"
+  
+  echo -n "  - Plasma desktop themes... "
+  cp -r ${SRC_DIR}/plasma/desktoptheme/* ${PLASMA_DIR} && echo "OK" || echo "FAILED"
+  
+  echo -n "  - Look and Feel packages... "
+  cp -r ${SRC_DIR}/plasma/look-and-feel/* ${LOOKFEEL_DIR} && echo "OK" || echo "FAILED"
+  
+  echo -n "  - Wallpapers... "
+  cp -r ${SRC_DIR}/wallpaper/* ${WALLPAPER_DIR} && echo "OK" || echo "FAILED"
+  
+  # Verify critical files
+  echo
+  echo "Verifying installation..."
+  if [[ -f "${WALLPAPER_DIR}/SWD_PSP_OS-dark/contents/images/3840x2400.jpg" ]]; then
+    echo "  ✓ Dark wallpaper installed"
+  else
+    echo "  ✗ Dark wallpaper NOT found at: ${WALLPAPER_DIR}/SWD_PSP_OS-dark/contents/images/3840x2400.jpg"
+  fi
+  
+  if [[ -f "${WALLPAPER_DIR}/SWD_PSP_OS-light/contents/images/3840x2400.jpg" ]]; then
+    echo "  ✓ Light wallpaper installed"
+  else
+    echo "  ✗ Light wallpaper NOT found at: ${WALLPAPER_DIR}/SWD_PSP_OS-light/contents/images/3840x2400.jpg"
+  fi
 }
 
 echo "Installing '${THEME_NAME} kde themes'..."
+echo "Installation directory: $([ "$UID" -eq "$ROOT_UID" ] && echo "System (/usr/share)" || echo "User ($HOME/.local/share)")"
+echo
 
 install "${name:-${THEME_NAME}}"
 
+echo
 echo "Install finished..."
 echo
 echo "========================================="
@@ -61,7 +91,14 @@ echo "1. Go to System Settings → Appearance → Global Theme"
 echo "2. Select 'SWD_PSP_OS-dark' or 'SWD_PSP_OS-light'"
 echo "3. Click 'Apply'"
 echo
+echo "If wallpaper doesn't apply, run:"
+echo "  ./apply-wallpaper.sh        # For dark wallpaper"
+echo "  ./apply-wallpaper.sh --light # For light wallpaper"
+echo
 echo "For SDDM login theme, run:"
 echo "  sudo ./sddm-dark/6.0/install.sh  # For dark variant"
 echo "  sudo ./sddm-light/6.0/install.sh # For light variant"
+echo
+echo "To verify installation, run:"
+echo "  ./verify-installation.sh"
 echo "========================================="
