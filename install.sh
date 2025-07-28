@@ -47,3 +47,21 @@ echo "Installing '${THEME_NAME} kde themes'..."
 install "${name:-${THEME_NAME}}"
 
 echo "Install finished..."
+echo
+echo "========================================="
+echo "IMPORTANT: Theme installed but NOT applied!"
+echo "========================================="
+echo
+echo "To apply the theme, run:"
+echo "  ./apply-theme.sh        # For dark theme"
+echo "  ./apply-theme.sh --light # For light theme"
+echo
+echo "Or manually:"
+echo "1. Go to System Settings → Appearance → Global Theme"
+echo "2. Select 'SWD_PSP_OS-dark' or 'SWD_PSP_OS-light'"
+echo "3. Click 'Apply'"
+echo
+echo "For SDDM login theme, run:"
+echo "  sudo ./sddm-dark/6.0/install.sh  # For dark variant"
+echo "  sudo ./sddm-light/6.0/install.sh # For light variant"
+echo "========================================="

@@ -26,6 +26,8 @@ In this repository you'll find:
 
 ## Installation
 
+### Step 1: Install Theme Files
+
 ```sh
 ./install.sh
 ```
@@ -34,6 +36,21 @@ For system-wide installation (recommended for workstations):
 ```sh
 sudo ./install.sh
 ```
+
+### Step 2: Apply the Theme
+
+After installation, the theme needs to be applied. Use the included script:
+
+```sh
+./apply-theme.sh        # For dark theme (default)
+./apply-theme.sh --light # For light theme
+```
+
+Or apply manually:
+1. Go to **System Settings → Appearance → Global Theme**
+2. Select **SWD_PSP_OS-dark** or **SWD_PSP_OS-light**
+3. Click **Apply**
+4. Check all components you want to apply (colors, icons, plasma theme, etc.)
 
 ### SDDM Theme Installation
 
