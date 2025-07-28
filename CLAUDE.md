@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-Win11OS-kde is a Windows 11-inspired theme package for KDE Plasma desktop. It provides both light and dark theme variants across multiple KDE components.
+SWD_PSP_OS-kde is a Windows 11-inspired theme package for KDE Plasma desktop. It provides both light and dark theme variants across multiple KDE components.
 
 ## Installation and Testing Commands
 
@@ -32,24 +32,24 @@ sudo ./sddm-light/6.0/install.sh # For Plasma 6
 The repository contains six main KDE theme components:
 
 1. **Aurorae Themes** (`aurorae/`) - Window decoration themes
-   - Win11OS-dark/ - Dark variant configuration and SVG assets
-   - Win11OS-light/ - Light variant configuration and SVG assets
+   - SWD_PSP_OS-dark/ - Dark variant configuration and SVG assets
+   - SWD_PSP_OS-light/ - Light variant configuration and SVG assets
 
 2. **Kvantum Themes** (`Kvantum/`) - Application widget style engine themes
-   - Win11OS-dark/ - Contains .kvconfig and .svg for dark theme
-   - Win11OS-light/ - Contains .kvconfig and .svg for light theme
+   - SWD_PSP_OS-dark/ - Contains .kvconfig and .svg for dark theme
+   - SWD_PSP_OS-light/ - Contains .kvconfig and .svg for light theme
 
 3. **Color Schemes** (`color-schemes/`) - System-wide color definitions
-   - Win11OSDark.colors
-   - Win11OSLight.colors
+   - SWD_PSP_OSDark.colors
+   - SWD_PSP_OSLight.colors
 
 4. **Plasma Desktop Themes** (`plasma/desktoptheme/`) - Plasma panel and widget themes
    - Each variant contains: icons/, widgets/, dialogs/, translucent/, solid/
    - SVG assets for UI elements (panel backgrounds, tooltips, buttons, etc.)
 
 5. **Look-and-Feel Packages** (`plasma/look-and-feel/`) - Complete theme packages
-   - com.github.yeyushengfan258.Win11OS-dark/
-   - com.github.yeyushengfan258.Win11OS-light/
+   - com.github.KGPSP.SWD_PSP_OS-dark/
+   - com.github.KGPSP.SWD_PSP_OS-light/
    - Includes splash screens, defaults, and metadata
 
 6. **SDDM Login Themes** (`sddm-dark/`, `sddm-light/`) - Login screen themes
@@ -88,9 +88,9 @@ The install script detects if running as root and installs to appropriate locati
 ### File Naming Conventions
 
 - Theme variants use suffix: `-dark` or `-light`
-- SDDM themes: `Win11OS-dark`, `Win11OS-light`
-- Look-and-Feel packages: `com.github.yeyushengfan258.Win11OS-[variant]`
-- Color scheme files: `Win11OS[Dark|Light].colors`
+- SDDM themes: `SWD_PSP_OS-dark`, `SWD_PSP_OS-light`
+- Look-and-Feel packages: `com.github.KGPSP.SWD_PSP_OS-[variant]`
+- Color scheme files: `SWD_PSP_OS[Dark|Light].colors`
 - Config files: `[theme]rc` for Aurorae, `.kvconfig` for Kvantum
 
 ### Important Files for Theme Customization

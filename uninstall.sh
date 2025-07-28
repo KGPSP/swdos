@@ -23,14 +23,14 @@ fi
 
 SRC_DIR=$(cd $(dirname $0) && pwd)
 
-THEME_NAME=Win11OS
+THEME_NAME=SWD_PSP_OS
 
 uninstall() {
   local name=${1}
 
   local AURORAE_THEME="${AURORAE_DIR}/${name}"
   local PLASMA_THEME="${PLASMA_DIR}/${name}"
-  local LOOKFEEL_THEME="${LOOKFEEL_DIR}/com.github.yeyushengfan258.${name}"
+  local LOOKFEEL_THEME="${LOOKFEEL_DIR}/com.github.KGPSP.${name}"
 
   [[ -d ${AURORAE_THEME} ]] && rm -rfv ${AURORAE_THEME}
   [[ -d ${PLASMA_THEME} ]] && rm -rfv ${PLASMA_THEME}

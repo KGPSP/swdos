@@ -1,5 +1,5 @@
 
-Win11OS-light sddm theme for KDE Plasma desktop.
+SWD_PSP_OS-light sddm theme for KDE Plasma desktop.
 
 ## Installation
 
