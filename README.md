@@ -13,10 +13,11 @@ In this repository you'll find:
 - Aurorae Themes (Window decorations)
 - Kvantum Themes (Application styling)
 - Plasma Color Schemes
-- Plasma Desktop Themes
-- Plasma Look-and-Feel Settings
-- SDDM Login Themes
-- Custom wallpapers and branding
+- Plasma Desktop Themes with custom PSP kickoff button
+- Plasma Look-and-Feel Settings with desktop layout configuration
+- SDDM Login Themes with PSP branding
+- Custom PSP wallpapers and logos
+- Automatic panel and widget configuration
 
 ### System Requirements
 
@@ -50,7 +51,9 @@ Or apply manually:
 1. Go to **System Settings → Appearance → Global Theme**
 2. Select **SWD_PSP_OS-dark** or **SWD_PSP_OS-light**
 3. Click **Apply**
-4. Check all components you want to apply (colors, icons, plasma theme, etc.)
+4. Check all components you want to apply:
+   - ✓ Appearance Settings (colors, icons, plasma theme)
+   - ✓ Desktop and Window Layout (panel configuration, widgets, kickoff)
 
 ### SDDM Theme Installation
 
@@ -74,13 +77,25 @@ sudo ./sddm-light/6.0/install.sh # Light variant
 ./uninstall.sh
 ```
 
+## Verification
+
+To verify the installation was successful:
+```sh
+./verify-installation.sh
+```
+
+This will check all theme components are properly installed.
+
 ## Configuration
 
 After installation:
-1. Go to System Settings → Appearance
-2. Select "SWD_PSP_OS" in Global Theme
-3. Apply the theme
-4. Restart the session for full effect
+1. Go to System Settings → Appearance → Global Theme
+2. Select "SWD_PSP_OS-dark" or "SWD_PSP_OS-light"
+3. Ensure both checkboxes are selected:
+   - Appearance Settings
+   - Desktop and Window Layout
+4. Click Apply
+5. Restart the session for full effect
 
 ## License
 

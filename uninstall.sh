@@ -35,14 +35,16 @@ uninstall() {
   [[ -d ${AURORAE_THEME} ]] && rm -rfv ${AURORAE_THEME}
   [[ -d ${PLASMA_THEME} ]] && rm -rfv ${PLASMA_THEME}
   [[ -d ${LOOKFEEL_THEME} ]] && rm -rfv ${LOOKFEEL_THEME}
-  [[ -d ${KVANTUM_THEME}/${name} ]] && rm -rfv ${KVANTUM_THEME}/${name}
-  [[ -d ${SCHEMES_DIR}/${name}.colors ]] && rm -rfv ${SCHEMES_DIR}/${name}.colors
-  [[ -d ${WALLPAPER_DIR}/Layan ]] && rm -rfv ${WALLPAPER_DIR}/${name}
+  [[ -d ${KVANTUM_DIR}/${name} ]] && rm -rfv ${KVANTUM_DIR}/${name}
+  [[ -f ${SCHEMES_DIR}/${name}.colors ]] && rm -fv ${SCHEMES_DIR}/${name}.colors
+  [[ -d ${WALLPAPER_DIR}/${name} ]] && rm -rfv ${WALLPAPER_DIR}/${name}
 }
 
 echo "Uninstalling '${THEME_NAME} kde themes'..."
 
-uninstall "${name:-${THEME_NAME}-light}"
-uninstall "${name:-${THEME_NAME}-dark}"
+uninstall "${THEME_NAME}-light"
+uninstall "${THEME_NAME}-dark"
+uninstall "${THEME_NAME}Light"
+uninstall "${THEME_NAME}Dark"
 
 echo "Uninstall finished..."
