@@ -40,11 +40,9 @@ uninstall() {
   [[ -d ${WALLPAPER_DIR}/${name} ]] && rm -rfv ${WALLPAPER_DIR}/${name}
 }
 
-echo "Uninstalling '${THEME_NAME} kde themes'..."
+echo "Uninstalling '${THEME_NAME} kde theme'..."
 
-uninstall "${THEME_NAME}-light"
 uninstall "${THEME_NAME}-dark"
-uninstall "${THEME_NAME}Light"
 uninstall "${THEME_NAME}Dark"
 
 echo "Uninstall finished..."

@@ -3,7 +3,7 @@
 ## 🆕 Wprowadzone zmiany
 
 ### 1. **Naprawiony apply-theme.sh**
-- ✅ Poprawione nazwy schematów kolorów (`SWD_PSP_OSDark`, `SWD_PSP_OSLight`)
+- ✅ Poprawiona nazwa schematu kolorów (`SWD_PSP_OSDark`)
 - ✅ Dodany restart plasmashell po aplikowaniu theme
 - ✅ Czyszczenie cache plasma przed restartowaniem
 - ✅ Lepsze wykrywanie wersji Plasma (5.x/6.x)
@@ -32,8 +32,7 @@
 ./install.sh
 
 # 2. Zastosuj theme z nowymi poprawkami
-./apply-theme.sh          # dla ciemnego
-./apply-theme.sh --light  # dla jasnego
+./apply-theme.sh
 ```
 
 ### Jeśli ikona Start nadal nie działa:
@@ -57,10 +56,10 @@
 - Dodane kopiowanie `logo-white.svg` → `kde.svg` w splash
 - Dodane kopiowanie do SDDM themes
 
-### Problem 3: Błędne nazwy schematów kolorów
+### Problem 3: Błędna nazwa schematu kolorów
 **Przyczyna:** apply-theme.sh używał `${THEME_NAME}Dark` zamiast `SWD_PSP_OSDark`
 **Rozwiązanie:**
-- Poprawione na `SWD_PSP_OSDark` i `SWD_PSP_OSLight`
+- Poprawione na `SWD_PSP_OSDark`
 
 ## 📋 Weryfikacja
 

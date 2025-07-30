@@ -50,18 +50,12 @@ echo "4. Applying desktop layout..."
 
 # Find and apply look-and-feel layout
 DARK_LAYOUT="$HOME/.local/share/plasma/look-and-feel/com.github.KGPSP.SWD_PSP_OS-dark/contents/layouts/org.kde.plasma.desktop-layout.js"
-LIGHT_LAYOUT="$HOME/.local/share/plasma/look-and-feel/com.github.KGPSP.SWD_PSP_OS-light/contents/layouts/org.kde.plasma.desktop-layout.js"
 
 if [[ -f "$DARK_LAYOUT" ]]; then
     # Apply the layout script which should set the start icon
     if command -v plasma-apply-lookandfeel >/dev/null; then
         plasma-apply-lookandfeel -a "com.github.KGPSP.SWD_PSP_OS-dark" --resetLayout 2>/dev/null
         echo "   ✓ Applied dark layout with start icon"
-    fi
-elif [[ -f "$LIGHT_LAYOUT" ]]; then
-    if command -v plasma-apply-lookandfeel >/dev/null; then
-        plasma-apply-lookandfeel -a "com.github.KGPSP.SWD_PSP_OS-light" --resetLayout 2>/dev/null
-        echo "   ✓ Applied light layout with start icon"
     fi
 fi
 

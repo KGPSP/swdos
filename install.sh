@@ -56,33 +56,25 @@ install() {
   # Copy and integrate mod/ files
   echo -n "  - PSP branding files... "
   if [[ -f "${SRC_DIR}/mod/logo-start.svg" ]] && [[ -f "${SRC_DIR}/mod/logo-white.svg" ]] && [[ -f "${SRC_DIR}/mod/bacground-log.jpg" ]]; then
-    # Copy start icon (red PSP logo) to plasma themes
+    # Copy start icon (red PSP logo) to plasma theme
     cp "${SRC_DIR}/mod/logo-start.svg" "${PLASMA_DIR}/SWD_PSP_OS-dark/icons/start.svg" 2>/dev/null
-    cp "${SRC_DIR}/mod/logo-start.svg" "${PLASMA_DIR}/SWD_PSP_OS-light/icons/start.svg" 2>/dev/null
     
-    # Copy white logo to splash screens
+    # Copy white logo to splash screen
     cp "${SRC_DIR}/mod/logo-white.svg" "${LOOKFEEL_DIR}/com.github.KGPSP.SWD_PSP_OS-dark/contents/splash/images/kde.svg" 2>/dev/null
-    cp "${SRC_DIR}/mod/logo-white.svg" "${LOOKFEEL_DIR}/com.github.KGPSP.SWD_PSP_OS-light/contents/splash/images/kde.svg" 2>/dev/null
     
-    # Copy white logo to SDDM themes
+    # Copy white logo to SDDM theme
     cp "${SRC_DIR}/mod/logo-white.svg" "${SRC_DIR}/sddm-dark/6.0/SWD_PSP_OS-dark/default-logo.svg" 2>/dev/null
-    cp "${SRC_DIR}/mod/logo-white.svg" "${SRC_DIR}/sddm-light/6.0/SWD_PSP_OS-light/default-logo.svg" 2>/dev/null
     cp "${SRC_DIR}/mod/logo-white.svg" "${SRC_DIR}/sddm-dark/5.0/SWD_PSP_OS-dark/default-logo.svg" 2>/dev/null
-    cp "${SRC_DIR}/mod/logo-white.svg" "${SRC_DIR}/sddm-light/5.0/SWD_PSP_OS-light/default-logo.svg" 2>/dev/null
     
-    # Copy background to wallpapers
+    # Copy background to wallpaper
     cp "${SRC_DIR}/mod/bacground-log.jpg" "${WALLPAPER_DIR}/SWD_PSP_OS-dark/contents/images/3840x2400.jpg" 2>/dev/null
-    cp "${SRC_DIR}/mod/bacground-log.jpg" "${WALLPAPER_DIR}/SWD_PSP_OS-light/contents/images/3840x2400.jpg" 2>/dev/null
     
-    # Copy background to splash screens
+    # Copy background to splash screen
     cp "${SRC_DIR}/mod/bacground-log.jpg" "${LOOKFEEL_DIR}/com.github.KGPSP.SWD_PSP_OS-dark/contents/splash/images/background.jpg" 2>/dev/null
-    cp "${SRC_DIR}/mod/bacground-log.jpg" "${LOOKFEEL_DIR}/com.github.KGPSP.SWD_PSP_OS-light/contents/splash/images/background.jpg" 2>/dev/null
     
-    # Copy background to SDDM themes
+    # Copy background to SDDM theme
     cp "${SRC_DIR}/mod/bacground-log.jpg" "${SRC_DIR}/sddm-dark/6.0/SWD_PSP_OS-dark/background.jpeg" 2>/dev/null
-    cp "${SRC_DIR}/mod/bacground-log.jpg" "${SRC_DIR}/sddm-light/6.0/SWD_PSP_OS-light/background.jpeg" 2>/dev/null
     cp "${SRC_DIR}/mod/bacground-log.jpg" "${SRC_DIR}/sddm-dark/5.0/SWD_PSP_OS-dark/background.jpg" 2>/dev/null
-    cp "${SRC_DIR}/mod/bacground-log.jpg" "${SRC_DIR}/sddm-light/5.0/SWD_PSP_OS-light/background.jpg" 2>/dev/null
     
     echo "OK"
   else
@@ -98,21 +90,16 @@ install() {
     echo "  ✗ Dark wallpaper NOT found at: ${WALLPAPER_DIR}/SWD_PSP_OS-dark/contents/images/3840x2400.jpg"
   fi
   
-  if [[ -f "${WALLPAPER_DIR}/SWD_PSP_OS-light/contents/images/3840x2400.jpg" ]]; then
-    echo "  ✓ Light wallpaper installed"
-  else
-    echo "  ✗ Light wallpaper NOT found at: ${WALLPAPER_DIR}/SWD_PSP_OS-light/contents/images/3840x2400.jpg"
-  fi
   
   # Verify PSP branding files
   if [[ -f "${PLASMA_DIR}/SWD_PSP_OS-dark/icons/start.svg" ]]; then
-    echo "  ✓ PSP Start icon installed (dark)"
+    echo "  ✓ PSP Start icon installed"
   else
     echo "  ✗ PSP Start icon NOT found"
   fi
   
   if [[ -f "${LOOKFEEL_DIR}/com.github.KGPSP.SWD_PSP_OS-dark/contents/splash/images/kde.svg" ]]; then
-    echo "  ✓ PSP Splash logo installed (dark)"
+    echo "  ✓ PSP Splash logo installed"
   else
     echo "  ✗ PSP Splash logo NOT found"
   fi
@@ -132,21 +119,19 @@ echo "IMPORTANT: Theme installed but NOT applied!"
 echo "========================================="
 echo
 echo "To apply the theme, run:"
-echo "  ./apply-theme.sh        # For dark theme"
-echo "  ./apply-theme.sh --light # For light theme"
+echo "  ./apply-theme.sh"
 echo
 echo "Or manually:"
 echo "1. Go to System Settings → Appearance → Global Theme"
-echo "2. Select 'SWD_PSP_OS-dark' or 'SWD_PSP_OS-light'"
+echo "2. Select 'SWD_PSP_OS-dark'"
 echo "3. Click 'Apply'"
 echo
 echo "If wallpaper doesn't apply, run:"
-echo "  ./apply-wallpaper.sh        # For dark wallpaper"
-echo "  ./apply-wallpaper.sh --light # For light wallpaper"
+echo "  ./apply-wallpaper.sh"
 echo
 echo "For SDDM login theme, run:"
-echo "  sudo ./sddm-dark/6.0/install.sh  # For dark variant"
-echo "  sudo ./sddm-light/6.0/install.sh # For light variant"
+echo "  sudo ./sddm-dark/6.0/install.sh  # For Plasma 6"
+echo "  sudo ./sddm-dark/5.0/install.sh  # For Plasma 5"
 echo
 echo "To verify installation, run:"
 echo "  ./verify-installation.sh"

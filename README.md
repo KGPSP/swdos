@@ -93,13 +93,12 @@ After installation, apply the theme using ONE of these methods:
 
 **Method A: Using the apply script (recommended)**
 ```sh
-./apply-theme.sh        # For dark theme (default)
-./apply-theme.sh --light # For light theme
+./apply-theme.sh
 ```
 
 **Method B: Manual application**
 1. Go to **System Settings → Appearance → Global Theme**
-2. Select **SWD_PSP_OS-dark** or **SWD_PSP_OS-light**
+2. Select **SWD_PSP_OS-dark**
 3. Click **Apply**
 4. Make sure BOTH checkboxes are selected:
    - ✓ Appearance Settings (colors, icons, plasma theme)
@@ -109,8 +108,7 @@ After installation, apply the theme using ONE of these methods:
 
 If the wallpaper doesn't apply automatically:
 ```sh
-./apply-wallpaper.sh        # For dark wallpaper
-./apply-wallpaper.sh --light # For light wallpaper
+./apply-wallpaper.sh
 ```
 
 #### Step 6: Verify Installation
@@ -126,14 +124,12 @@ To install the login screen theme:
 
 For Plasma 5:
 ```sh
-sudo ./sddm-dark/5.0/install.sh  # Dark variant
-sudo ./sddm-light/5.0/install.sh # Light variant
+sudo ./sddm-dark/5.0/install.sh
 ```
 
 For Plasma 6:
 ```sh
-sudo ./sddm-dark/6.0/install.sh  # Dark variant
-sudo ./sddm-light/6.0/install.sh # Light variant
+sudo ./sddm-dark/6.0/install.sh
 ```
 
 ## Troubleshooting
@@ -178,7 +174,7 @@ This will check all theme components are properly installed.
 
 After installation:
 1. Go to System Settings → Appearance → Global Theme
-2. Select "SWD_PSP_OS-dark" or "SWD_PSP_OS-light"
+2. Select "SWD_PSP_OS-dark"
 3. Ensure both checkboxes are selected:
    - Appearance Settings
    - Desktop and Window Layout

@@ -13,26 +13,16 @@ command_exists() {
     command -v "$1" >/dev/null 2>&1
 }
 
-# Determine theme variant
-if [[ "$1" == "--light" ]]; then
-    VARIANT="light"
-    COLOR_SCHEME="SWD_PSP_OSLight"
-    DESKTOP_THEME="${THEME_NAME}-light"
-    LOOKANDFEEL_THEME="com.github.KGPSP.${THEME_NAME}-light"
-    AURORAE_THEME="__aurorae__svg__${THEME_NAME}-light"
-    KVANTUM_THEME="${THEME_NAME}-light"
-    WALLPAPER_THEME="${THEME_NAME}-light"
-else
-    VARIANT="dark"
-    COLOR_SCHEME="SWD_PSP_OSDark"
-    DESKTOP_THEME="${THEME_NAME}-dark"
-    LOOKANDFEEL_THEME="com.github.KGPSP.${THEME_NAME}-dark"
-    AURORAE_THEME="__aurorae__svg__${THEME_NAME}-dark"
-    KVANTUM_THEME="${THEME_NAME}-dark"
-    WALLPAPER_THEME="${THEME_NAME}-dark"
-fi
+# Set dark theme variant
+VARIANT="dark"
+COLOR_SCHEME="SWD_PSP_OSDark"
+DESKTOP_THEME="${THEME_NAME}-dark"
+LOOKANDFEEL_THEME="com.github.KGPSP.${THEME_NAME}-dark"
+AURORAE_THEME="__aurorae__svg__${THEME_NAME}-dark"
+KVANTUM_THEME="${THEME_NAME}-dark"
+WALLPAPER_THEME="${THEME_NAME}-dark"
 
-echo "Applying ${VARIANT} variant..."
+echo "Applying ${VARIANT} theme..."
 echo
 
 # 1. Apply Look and Feel package FIRST (this should configure everything)

@@ -8,7 +8,6 @@
 - **Używane jako:** Ikona przycisku Start/Kickoff
 - **Instalowane do:**
   - `plasma/desktoptheme/SWD_PSP_OS-dark/icons/start.svg`
-  - `plasma/desktoptheme/SWD_PSP_OS-light/icons/start.svg`
 
 #### logo-white.svg (białe logo)
 - **Używane jako:** Logo podczas uruchamiania systemu i na ekranie logowania
@@ -33,9 +32,8 @@
 - Wygląd przycisków, menu, pól tekstowych
 - Spójny wygląd aplikacji
 
-✅ **Color Schemes** (Schematy kolorów)
+✅ **Color Scheme** (Schemat kolorów)
 - SWD_PSP_OSDark - ciemny schemat
-- SWD_PSP_OSLight - jasny schemat
 
 ✅ **Plasma Desktop Theme** (Motyw pulpitu)
 - Panel zadań

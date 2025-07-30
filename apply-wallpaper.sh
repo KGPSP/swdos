@@ -8,15 +8,12 @@ THEME_NAME="SWD_PSP_OS"
 echo "Applying ${THEME_NAME} wallpaper..."
 echo
 
-# Determine which variant to apply
+# Use dark variant
 VARIANT="dark"
-if [[ "$1" == "--light" ]]; then
-    VARIANT="light"
-fi
 
 # Check for wallpaper paths
-USER_WALLPAPER="$HOME/.local/share/wallpapers/${THEME_NAME}-${VARIANT}/contents/images/3840x2400.jpg"
-SYSTEM_WALLPAPER="/usr/share/wallpapers/${THEME_NAME}-${VARIANT}/contents/images/3840x2400.jpg"
+USER_WALLPAPER="$HOME/.local/share/wallpapers/${THEME_NAME}-dark/contents/images/3840x2400.jpg"
+SYSTEM_WALLPAPER="/usr/share/wallpapers/${THEME_NAME}-dark/contents/images/3840x2400.jpg"
 
 # Find which wallpaper exists
 WALLPAPER_PATH=""
