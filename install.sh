@@ -53,6 +53,42 @@ install() {
   echo -n "  - Wallpapers... "
   cp -r ${SRC_DIR}/wallpaper/* ${WALLPAPER_DIR} && echo "OK" || echo "FAILED"
   
+  # Copy and integrate mod/ files
+  echo -n "  - PSP branding files... "
+  if [[ -f "${SRC_DIR}/mod/logo-start.svg" ]] && [[ -f "${SRC_DIR}/mod/logo-white.svg" ]] && [[ -f "${SRC_DIR}/mod/bacground-log.jpg" ]]; then
+    # Copy start icon (red PSP logo) to plasma themes
+    cp "${SRC_DIR}/mod/logo-start.svg" "${PLASMA_DIR}/SWD_PSP_OS-dark/icons/start.svg" 2>/dev/null
+    cp "${SRC_DIR}/mod/logo-start.svg" "${PLASMA_DIR}/SWD_PSP_OS-light/icons/start.svg" 2>/dev/null
+    
+    # Copy white logo to splash screens
+    cp "${SRC_DIR}/mod/logo-white.svg" "${LOOKFEEL_DIR}/com.github.KGPSP.SWD_PSP_OS-dark/contents/splash/images/kde.svg" 2>/dev/null
+    cp "${SRC_DIR}/mod/logo-white.svg" "${LOOKFEEL_DIR}/com.github.KGPSP.SWD_PSP_OS-light/contents/splash/images/kde.svg" 2>/dev/null
+    
+    # Copy white logo to SDDM themes
+    cp "${SRC_DIR}/mod/logo-white.svg" "${SRC_DIR}/sddm-dark/6.0/SWD_PSP_OS-dark/default-logo.svg" 2>/dev/null
+    cp "${SRC_DIR}/mod/logo-white.svg" "${SRC_DIR}/sddm-light/6.0/SWD_PSP_OS-light/default-logo.svg" 2>/dev/null
+    cp "${SRC_DIR}/mod/logo-white.svg" "${SRC_DIR}/sddm-dark/5.0/SWD_PSP_OS-dark/default-logo.svg" 2>/dev/null
+    cp "${SRC_DIR}/mod/logo-white.svg" "${SRC_DIR}/sddm-light/5.0/SWD_PSP_OS-light/default-logo.svg" 2>/dev/null
+    
+    # Copy background to wallpapers
+    cp "${SRC_DIR}/mod/bacground-log.jpg" "${WALLPAPER_DIR}/SWD_PSP_OS-dark/contents/images/3840x2400.jpg" 2>/dev/null
+    cp "${SRC_DIR}/mod/bacground-log.jpg" "${WALLPAPER_DIR}/SWD_PSP_OS-light/contents/images/3840x2400.jpg" 2>/dev/null
+    
+    # Copy background to splash screens
+    cp "${SRC_DIR}/mod/bacground-log.jpg" "${LOOKFEEL_DIR}/com.github.KGPSP.SWD_PSP_OS-dark/contents/splash/images/background.jpg" 2>/dev/null
+    cp "${SRC_DIR}/mod/bacground-log.jpg" "${LOOKFEEL_DIR}/com.github.KGPSP.SWD_PSP_OS-light/contents/splash/images/background.jpg" 2>/dev/null
+    
+    # Copy background to SDDM themes
+    cp "${SRC_DIR}/mod/bacground-log.jpg" "${SRC_DIR}/sddm-dark/6.0/SWD_PSP_OS-dark/background.jpeg" 2>/dev/null
+    cp "${SRC_DIR}/mod/bacground-log.jpg" "${SRC_DIR}/sddm-light/6.0/SWD_PSP_OS-light/background.jpeg" 2>/dev/null
+    cp "${SRC_DIR}/mod/bacground-log.jpg" "${SRC_DIR}/sddm-dark/5.0/SWD_PSP_OS-dark/background.jpg" 2>/dev/null
+    cp "${SRC_DIR}/mod/bacground-log.jpg" "${SRC_DIR}/sddm-light/5.0/SWD_PSP_OS-light/background.jpg" 2>/dev/null
+    
+    echo "OK"
+  else
+    echo "FAILED - mod/ files not found"
+  fi
+  
   # Verify critical files
   echo
   echo "Verifying installation..."
@@ -66,6 +102,19 @@ install() {
     echo "  ✓ Light wallpaper installed"
   else
     echo "  ✗ Light wallpaper NOT found at: ${WALLPAPER_DIR}/SWD_PSP_OS-light/contents/images/3840x2400.jpg"
+  fi
+  
+  # Verify PSP branding files
+  if [[ -f "${PLASMA_DIR}/SWD_PSP_OS-dark/icons/start.svg" ]]; then
+    echo "  ✓ PSP Start icon installed (dark)"
+  else
+    echo "  ✗ PSP Start icon NOT found"
+  fi
+  
+  if [[ -f "${LOOKFEEL_DIR}/com.github.KGPSP.SWD_PSP_OS-dark/contents/splash/images/kde.svg" ]]; then
+    echo "  ✓ PSP Splash logo installed (dark)"
+  else
+    echo "  ✗ PSP Splash logo NOT found"
   fi
 }
 
